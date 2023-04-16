@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    background-image: url("../images/background.svg");
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+nav {
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    float: top;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 20px -12px;
+}
+
+nav .logo {
+    margin-left: 30px;
+}
+
+nav .items-center, nav .items-left {
+    display: flex;
+    gap: 20px;
+}
+
+nav .items-center .jobs-dropdown {
+    position: absolute;
+    top: 50px;
+    left: 297px;
+    width: 578px;
+    height: 44px;
+    list-style: none;
+    background-color: #282828;
+    color: #938C8C;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 64px;
+    gap: 64px;
+}
+
+nav .items-center .jobs-dropdown .employee-li {
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #FF8500;
+}
+
+nav .items-center .jobs-dropdown-polygon {
+    position: absolute;
+    top: 37px;
+    left: 404px;
+    border-radius: 1px;
+}
+
+nav .items-center .jobs-dropdown, nav .items-center .jobs-dropdown-polygon {
+    display: none;
+}
+
+nav .items-left {
+    margin-right: 20px;
+}
+
+nav .items-center a, nav .items-left a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #938C8C;
+}
+
+nav .items-left .lang span {
+    margin-right: 1px;
+    margin-left: 1px;
+    color: #FF8500;
+}
+
+nav .items-left .lang a {
+    color: #938C8C;
+}
+
+nav .items-left .lang #en {
+    color: #FF8500;
+}
+
+nav .items-left a {
+    color: black;
+}
+
+nav .items-left .login {
+    font-weight: bold;
+}
+
+.top-details {
+    margin: 110px auto auto;
+    text-align: center;
+}
+
+.top-details p, .top-details h1 {
+    margin: 8px auto auto;
+}
+
+.top-details p:first-of-type {
+    margin: 20px auto auto;
+}
+
+.top-details h1 {
+    margin: 10px auto auto;
+    font-weight: 800;
+}
+
+.top-details button {
+    margin: 22px auto auto;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Inter';
+    height: 32px;
+    width: 180px;
+    padding: 4px 32px 4px 32px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-form {
+    margin: 60px auto auto;
+    text-align: center;
+    width: 600px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.search-form input {
+    background-color: transparent;
+    border: none;
+    width: 520px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #938C8C;
+}
+
+.search-form input:focus {
+    outline: none;
+}
+
+.search-form img {
+    margin: 0 4px;
+    height: 18px;
+    width: 18px;
+}
+
+.posts-section .posts-header {
+    text-align: center;
+    margin: 35px 0 0 0;
+}
+
+.posts-section .posts-header ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.posts-section .posts-header li {
+    display: inline;
+}
+
+.posts-section .posts-header li:first-of-type {
+    font-weight: bold;
+    border-bottom: 1px solid #FF8500;
+}
+
+.posts-section .posts-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 105px;
+    margin: 35px 0 70px 0;
+}
+
+.posts-section .posts-body .posts-card {
+    width: 305px;
+    height: 272px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.posts-section .posts-body .posts-card .card-header {
+    display: flex;
+    align-items: center;
+}
+
+.posts-section .posts-body .posts-card .card-header img {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+.posts-section .posts-body .posts-card .card-header label {
+    font-size: 10px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.posts-section .posts-body .posts-card .card-body .title {
+    margin: 20px 20px 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.posts-section .posts-body .posts-card .card-body .details li {
+    margin: 9px;
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    width: 41%;
+    display: inline-block;
+}
+
+.posts-section .posts-body .posts-card .card-body .details span {
+    color: #938C8C;
+    text-align: left;
+}
+
+.posts-section .posts-body .posts-card .card-footer {
+    margin-top: 21px;
+    margin-bottom: 18px;
+}
+
+.posts-section .posts-body .posts-card .card-footer button {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Inter';
+    height: 40px;
+    width: 241px;
+    padding: 4px 32px 4px 32px;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.footer-container {
+    background-color: black;
+    padding: 32px;
+    color: white;
+}
+
+.footer-container .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 120px;
+    padding-left: 120px;
+    align-items: center;
+}
+
+.footer-container .footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-container .footer li, .footer-container .footer li a {
+    font-size: 14px;
+    list-style: none;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.footer-container .band-info {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 32px;
+}
+
+.footer-container .band-info div {
+    display: inline;
+}
+
+.footer-container .band-info hr {
+    width: 730px;
+    display: inline-block;
+}
